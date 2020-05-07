@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'navbar_item.dart';
 import 'navbar_logo.dart';
 
 class NavigationBarMobile extends StatelessWidget {
@@ -8,21 +7,16 @@ class NavigationBarMobile extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 80,
       child: Row(
+        mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
+          IconButton(
+            icon: Icon(Icons.menu),
+            onPressed: () {},
+          ),
           NavBarLogo(),
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              NavBarItem('Episodes'),
-              SizedBox(
-                width: 60,
-              ),
-              NavBarItem('About'),
-            ],
-          )
         ],
       ),
     );
