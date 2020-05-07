@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_practice_website/widgets/call_to_action/call_to_action.dart';
 import 'package:flutter_practice_website/widgets/course_details/course_details.dart';
-import 'package:flutter_practice_website/widgets/navigation_bar.dart';
+import 'package:flutter_practice_website/widgets/navigation_bar/navigation_bar.dart';
 
 import '../widgets/centered_view.dart';
 
