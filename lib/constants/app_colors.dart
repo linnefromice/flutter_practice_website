@@ -1,3 +1,3 @@
 import 'package:flutter/rendering.dart';
 
-final Color primary = Color.fromARGB(255, 31, 229, 146);
+final Color primaryColor = Color.fromARGB(255, 31, 229, 146);
