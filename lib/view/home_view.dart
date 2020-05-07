@@ -8,7 +8,12 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: NavigationBar(),
+      backgroundColor: Colors.white,
+      body: Column(
+        children: <Widget>[
+          NavigationBar()
+        ],
+      ),
     );
   }
 }
