@@ -23,3 +23,7 @@ A new Flutter project for building website.
 - [Create and Deploy a Flutter Web App](https://www.filledstacks.com/post/create-and-deploy-a-flutter-web-app/)
 - [Building a Responsive Website using Flutter](https://www.filledstacks.com/post/building-a-responsive-website-using-flutter/)
 - [Template Layouts and Navigation in Flutter Web](https://www.filledstacks.com/post/template-layouts-and-navigation-in-flutter-web/)
+
+### second
+
+- [Create a Website Using Flutter - Flutter Web - Speed Code](https://www.youtube.com/watch?v=E6fLm5XlJDY)
