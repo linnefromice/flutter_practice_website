@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice_website/views/about_view.dart';
-import 'package:flutter_practice_website/views/episodes_view.dart';
-import 'package:flutter_practice_website/views/home_view.dart';
+import 'package:flutter_practice_website/first/views/about_view.dart';
+import 'package:flutter_practice_website/first/views/episodes_view.dart';
+import 'package:flutter_practice_website/first/views/home_view.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   print('generateRoute: ${settings.name}');

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice_website/widgets/call_to_action/call_to_action_mobile.dart';
-import 'package:flutter_practice_website/widgets/call_to_action/call_to_action_tablet_desktop.dart';
+import 'package:flutter_practice_website/first/widgets/call_to_action/call_to_action_mobile.dart';
+import 'package:flutter_practice_website/first/widgets/call_to_action/call_to_action_tablet_desktop.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class CallToAction extends StatelessWidget {

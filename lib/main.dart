@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice_website/locator.dart';
-import 'package:flutter_practice_website/views/home_view.dart';
+import 'package:flutter_practice_website/first/locator.dart';
+import 'package:flutter_practice_website/first/views/home_view.dart';
 
 void main() {
   setupLocator();

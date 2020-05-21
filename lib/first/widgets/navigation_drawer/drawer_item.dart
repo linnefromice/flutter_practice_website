@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice_website/widgets/navigation_bar/navbar_item.dart';
+import 'package:flutter_practice_website/first/widgets/navigation_bar/navbar_item.dart';
 
 class DrawerItem extends StatelessWidget {
   DrawerItem(this.title, this.icon, this.navigationPath, {Key key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice_website/locator.dart';
-import 'package:flutter_practice_website/services/navigation_service.dart';
+import 'package:flutter_practice_website/first/locator.dart';
+import 'package:flutter_practice_website/first/services/navigation_service.dart';
 
 class NavBarItem extends StatelessWidget {
   NavBarItem(this.title, this.navigationPath, {Key key}) : super(key: key);

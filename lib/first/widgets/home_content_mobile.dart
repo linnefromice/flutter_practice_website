@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_practice_website/widgets/call_to_action/call_to_action.dart';
-import 'package:flutter_practice_website/widgets/course_details/course_details.dart';
+import 'package:flutter_practice_website/first/widgets/call_to_action/call_to_action.dart';
+import 'package:flutter_practice_website/first/widgets/course_details/course_details.dart';
 
 class HomeContentMobile extends StatelessWidget {
   HomeContentMobile({Key key}) : super(key: key);
