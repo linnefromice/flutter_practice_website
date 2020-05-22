@@ -27,3 +27,7 @@ A new Flutter project for building website.
 ### second
 
 - [Create a Website Using Flutter - Flutter Web - Speed Code](https://www.youtube.com/watch?v=E6fLm5XlJDY)
+
+### third
+
+- [Flutter Web : Responsive Landing Page - Speed Code](https://www.youtube.com/watch?v=87cz-ihAJ-8)

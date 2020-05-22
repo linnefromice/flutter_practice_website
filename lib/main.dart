@@ -3,6 +3,7 @@ import 'package:flutter_practice_website/first/locator.dart';
 import 'package:flutter_practice_website/first/views/home_view.dart';
 import 'package:flutter_practice_website/second/Screens/Home/home_screen.dart';
 import 'package:flutter_practice_website/second/constant.dart';
+import 'package:flutter_practice_website/third/home_page.dart' as ThirdHomePage;
 
 void main() {
   setupLocator();
@@ -13,7 +14,21 @@ class App extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return SecondApp();
+    return ThirdApp();
+  }
+}
+
+class ThirdApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Flutter Landing Page",
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue
+      ),
+      home: ThirdHomePage.HomePage(),
+    );
   }
 }
 
