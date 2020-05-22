@@ -20,6 +20,7 @@ class HomeScreen extends StatelessWidget {
           )
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             CustomAppBar(),
             Body(),
