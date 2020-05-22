@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practice_website/second/Screens/Home/Components/app_bar.dart';
 
+import 'Components/body.dart';
+
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -20,6 +22,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             CustomAppBar(),
+            Body(),
           ],
         ),
       ),
