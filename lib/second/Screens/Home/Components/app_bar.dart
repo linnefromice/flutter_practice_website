@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice_website/second/Components/default_button.dart';
 import 'package:flutter_practice_website/second/constant.dart';
 
 import 'menu_item.dart';
@@ -53,17 +54,9 @@ class CustomAppBar extends StatelessWidget {
             title: "login",
             press: () {},
           ),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(25),
-            child: FlatButton(
-              padding: EdgeInsets.symmetric(horizontal: 25, vertical: 15),
-              color: kPrimaryColor,
-              onPressed: () {},
-              child: Text(
-                "Get Started".toUpperCase(),
-
-              ),
-            ),
+          DefaultButton(
+            text: "Get Started",
+            press: () {},
           )
         ],
       ),
