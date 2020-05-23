@@ -1,6 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice_website/third/utils/responsive_layout.dart';
 
 class NavBar extends StatelessWidget {
+  final navLinks = ["Home", "Products", "Features", "Contact"];
+
+  List<Widget> navItem() {
+    return navLinks.map((text) {
+      return Padding(
+        padding: EdgeInsets.only(left: 10),
+        child: Text(
+          text,
+          style: TextStyle(
+            fontFamily: "Montserrat-Bold"
+          ),
+        ),
+      );
+    }).toList();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -35,6 +52,11 @@ class NavBar extends StatelessWidget {
               Text("Britu", style: TextStyle(fontSize: 26))
             ],
           ),
+          if (!ResponsiveLayout.isSmallScreen(context))
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[...navItem()],
+          )
         ],
       ),
     );
