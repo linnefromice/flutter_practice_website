@@ -31,3 +31,7 @@ A new Flutter project for building website.
 ### third
 
 - [Flutter Web : Responsive Landing Page - Speed Code](https://www.youtube.com/watch?v=87cz-ihAJ-8)
+
+### candidate
+
+- [Flutter web: Successful Landing Page - Speed Code](https://www.youtube.com/watch?v=wUCiY9MlHyY)
