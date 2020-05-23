@@ -96,6 +96,8 @@ class NavBar extends StatelessWidget {
               )
             ),
           )
+          else
+          Image.network("assets/third/menu.png", width: 26, height: 26)
         ],
       ),
     );
