@@ -8,27 +8,33 @@ class NavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Container(
-            width: 60,
-            height: 60,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(18),
-              gradient: LinearGradient(
-                colors: [
-                  Color(0xFFC86DD7),
-                  Color(0xFF3023AE),
-                ],
-                begin: Alignment.bottomRight,
-                end: Alignment.topLeft,
-              )
-            ),
-            child: Center(
-              child: Text(
-                'B',
-                style: TextStyle(fontSize: 30, color: Colors.white),
+          Row(
+            children: <Widget>[
+              Container(
+                width: 60,
+                height: 60,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(18),
+                  gradient: LinearGradient(
+                    colors: [
+                      Color(0xFFC86DD7),
+                      Color(0xFF3023AE),
+                    ],
+                    begin: Alignment.bottomRight,
+                    end: Alignment.topLeft,
+                  )
+                ),
+                child: Center(
+                  child: Text(
+                    'B',
+                    style: TextStyle(fontSize: 30, color: Colors.white),
+                  ),
+                ),
               ),
-            ),
-          )
+              SizedBox(width: 16),
+              Text("Britu", style: TextStyle(fontSize: 26))
+            ],
+          ),
         ],
       ),
     );
