@@ -14,7 +14,16 @@ class App extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return ThirdApp();
+    return FourthApp();
+  }
+}
+
+class FourthApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Container(),
+    );
   }
 }
 
