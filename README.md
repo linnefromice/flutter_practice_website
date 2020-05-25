@@ -36,6 +36,8 @@ A new Flutter project for building website.
 
 - [Build a Flutter Website in 10 Minutes](https://www.youtube.com/watch?v=HjlnT2ieh70)
 
+(https://developer.nytimes.com/my-apps/5048a24e-ba86-4299-b102-7f31e1f566cd)
+
 ### candidate
 
 - [Flutter web: Successful Landing Page - Speed Code](https://www.youtube.com/watch?v=wUCiY9MlHyY)
