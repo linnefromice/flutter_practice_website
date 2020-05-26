@@ -23,6 +23,11 @@ class FourthApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'Flutter Web NYTimes',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: Colors.blue,
+      ),
       home: Fourth.HomeScreen(),
     );
   }
