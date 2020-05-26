@@ -11,3 +11,15 @@ EdgeInsetsGeometry responsivePadding(MediaQueryData mediaQuery) {
   }
   return EdgeInsets.symmetric(horizontal: 100.0, vertical: 50.0);
 }
+
+int responsiveNumGridTiles(MediaQueryData mediaQuery) {
+  double deviceWidth = mediaQuery.size.width;
+  if (deviceWidth < 700) {
+    return 1;
+  } else if (deviceWidth < 1200) {
+    return 2;
+  } else if (deviceWidth < 1650) {
+    return 3;
+  }
+  return 4;
+}
