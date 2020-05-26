@@ -35,3 +35,15 @@ double responsiveImageHeight(MediaQueryData mediaQuery) {
   }
   return mediaQuery.size.width * 0.15;
 }
+
+double responsiveTitleHeight(MediaQueryData mediaQuery) {
+  double deviceWidth = mediaQuery.size.width;
+  if (deviceWidth < 700) {
+    return 120.0;
+  } else if (deviceWidth < 1200) {
+    return mediaQuery.size.width * 0.1;
+  } else if (deviceWidth < 1650) {
+    return mediaQuery.size.width * 0.07;
+  }
+  return mediaQuery.size.width * 0.05;
+}
