@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_practice_website/fourth/helper/responsive_helper.dart';
 import 'package:flutter_practice_website/fourth/models/article_model.dart';
 import 'package:flutter_practice_website/fourth/services/api_service.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -29,9 +30,9 @@ class _State extends State<HomeScreen> {
       tiles.add(_buildArticleTile(article, mediaQuery));
     });
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 100.0, vertical: 50.0),
+      padding: responsivePadding(mediaQuery),
       child: GridView.count(
-        crossAxisCount: 4,
+        crossAxisCount: responsiveNumGridTiles(mediaQuery),
         mainAxisSpacing: 30.0,
         crossAxisSpacing: 30.0,
         shrinkWrap: true,
@@ -56,7 +57,7 @@ class _State extends State<HomeScreen> {
         child: Column(
           children: <Widget>[
             Container(
-              height: 250.0,
+              height: responsiveImageHeight(mediaQuery),
               alignment: Alignment.bottomCenter,
               decoration: BoxDecoration(
                 color: Colors.white,
@@ -73,7 +74,7 @@ class _State extends State<HomeScreen> {
             Container(
               padding: EdgeInsets.all(10.0),
               alignment: Alignment.center,
-              height: 120.0,
+              height: responsiveTitleHeight(mediaQuery),
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white,
