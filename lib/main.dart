@@ -5,6 +5,7 @@ import 'package:flutter_practice_website/second/Screens/Home/home_screen.dart' a
 import 'package:flutter_practice_website/second/constant.dart' ;
 import 'package:flutter_practice_website/third/home_page.dart' as Third;
 import 'package:flutter_practice_website/fourth/screens/home_screen.dart' as Fourth;
+import 'package:flutter_practice_website/fifth/home.dart' as Fifth;
 
 void main() {
   setupLocator();
@@ -22,7 +23,15 @@ class App extends StatelessWidget {
 class FifthApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      title: 'Flutter portfolio',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: Fifth.Home(),
+    );
   }
 }
 
