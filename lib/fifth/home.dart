@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_practice_website/fifth/utils/bg_painter.dart';
 
 class Home extends StatelessWidget {
+  final navItems = ["Home", "About", "Service", "Portfolio", "Contact"];
+
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
@@ -32,7 +34,23 @@ class Home extends StatelessWidget {
         Container(
           margin: EdgeInsets.only(left: 50, top: 20),
           child: Image.asset("assets/fifth/Logo.png"),
-        )
+        ),
+        isTablet
+          ? Padding(
+              padding: EdgeInsets.only(right: 40),
+              child: Row(
+                children: navItems.map<Widget>((t) => Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  child: Container(
+                    child: Text(t.toUpperCase()),
+                  ),
+                )).toList(),
+              ),
+            )
+          : IconButton(
+              icon: Icon(Icons.menu),
+              onPressed: () {},
+            )
       ],
     ),
   );
