@@ -8,7 +8,9 @@ class Home extends StatelessWidget {
       body: Stack(
         fit: StackFit.expand,
         children: <Widget>[
-          Container()
+          CustomPaint(
+            painter: BackgroundPainter(),
+          ),
         ],
       ),
     );
