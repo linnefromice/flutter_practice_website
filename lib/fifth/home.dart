@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practice_website/fifth/utils/bg_painter.dart';
+import 'package:flutter_practice_website/fifth/utils/cursor.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatelessWidget {
   final navItems = ["Home", "About", "Service", "Portfolio", "Contact"];
@@ -41,9 +43,12 @@ class Home extends StatelessWidget {
               child: Row(
                 children: navItems.map<Widget>((t) => Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16),
-                  child: Container(
-                    child: Text(t.toUpperCase()),
-                  ),
+                  child: Cursor(
+                    child: Text(
+                      t.toUpperCase(),
+                      style: GoogleFonts.asap(fontWeight: FontWeight.w400),
+                    ),
+                  )
                 )).toList(),
               ),
             )
