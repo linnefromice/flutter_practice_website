@@ -55,6 +55,7 @@ flutter:
     - assets/first/logo.png
     - assets/second/images/
     - assets/third/
+    - assets/fifth/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
