@@ -73,6 +73,11 @@ class Home extends StatelessWidget {
                         )
                       ],
                     ),
+                  ),
+                  Image.asset(
+                    "assets/fifth/Image.png",
+                    width: 700,
+                    height: 650,
                   )
                 ],
               )
