@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_practice_website/fifth/utils/bg_painter.dart';
+import 'package:flutter_practice_website/fifth/utils/breakpoint.dart';
 import 'package:flutter_practice_website/fifth/utils/cursor.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -19,7 +20,50 @@ class Home extends StatelessWidget {
           ),
           ListView(
             children: <Widget>[
-              _appBar(size, isTablet)
+              _appBar(size, isTablet),
+              Wrap(
+                alignment: WrapAlignment.center,
+                verticalDirection: VerticalDirection.down,
+                children: <Widget>[
+                  Container(
+                    height: breakpoint(size.width, size.height * 0.7, 200, 180),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: breakpoint(
+                        size.width,
+                        CrossAxisAlignment.start,
+                        CrossAxisAlignment.center,
+                        CrossAxisAlignment.center
+                      ),
+                      mainAxisAlignment: breakpoint(
+                        size.width,
+                        MainAxisAlignment.center,
+                        MainAxisAlignment.center,
+                        MainAxisAlignment.end
+                      ),
+                      children: <Widget>[
+                        Text(
+                          "Luis Oenrique",
+                          style: GoogleFonts.asap(
+                            fontSize: breakpoint(size.width, 75, 55, 50),
+                            fontWeight: FontWeight.w500,
+                            letterSpacing: 12,
+                          ),
+                        ),
+                        Text(
+                          "User Experience / User Interface Expert",
+                          style: GoogleFonts.asap(
+                            fontSize: breakpoint(size.width, 22, 20, 14),
+                            color: Colors.black26,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        SizedBox(height: 35)
+                      ],
+                    ),
+                  )
+                ],
+              )
             ],
           )
         ],
