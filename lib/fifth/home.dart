@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_practice_website/fifth/utils/bg_painter.dart';
 import 'package:flutter_practice_website/fifth/utils/breakpoint.dart';
 import 'package:flutter_practice_website/fifth/utils/cursor.dart';
+import 'package:flutter_practice_website/fifth/widgets/hero_btn.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatelessWidget {
@@ -58,7 +59,18 @@ class Home extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                           ),
                         ),
-                        SizedBox(height: 35)
+                        SizedBox(height: 35),
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            HeroBtn(title: "Know more"),
+                            SizedBox(width: 20),
+                            HeroBtn(
+                              title: "Hire me",
+                              isOutline: true,
+                            )
+                          ],
+                        )
                       ],
                     ),
                   )

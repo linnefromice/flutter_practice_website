@@ -6,7 +6,7 @@ class HeroBtn extends StatefulWidget {
 
   final String title;
   final bool isOutline;
-  bool hover;
+  bool hover = false;
 
   HeroBtn({this.title, this.isOutline = false});
 
