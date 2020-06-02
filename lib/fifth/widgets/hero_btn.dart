@@ -28,8 +28,8 @@ class _HeroBtnState extends State<HeroBtn> {
         height: 50,
         decoration: BoxDecoration(
           color: !widget.isOutline
-              ? (!widget.hover ? Colors.white : Colors.white)
-              : (!widget.hover ? Colors.tealAccent : Colors.black),
+              ? (!widget.hover ? Colors.white : Colors.black)
+              : (!widget.hover ? Colors.transparent : Colors.black),
           border: !widget.isOutline
             ? null
             : Border.all(
